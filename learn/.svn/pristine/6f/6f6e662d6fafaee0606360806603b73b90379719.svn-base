@@ -1,0 +1,25 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd">
+
+	<diskStore path="d:\\ehcache" />
+
+	<cache name="userCache" maxBytesLocalHeap="50M">
+		<searchable>
+			<searchAttribute name="name" expression="value.getName()"/>
+			<searchAttribute name="age"/>
+			<searchAttribute name="unitNo" expression="value.unit.unitNo"/>
+			<searchAttribute name="unitName" expression="value.unit.getUnitName()"/>
+			<searchAttribute name="mobile" expression="value.getMobile()"/>
+			<searchAttribute name="hitCount" expression="element.getHitCount()"/>
+		</searchable>
+	</cache>
+
+	<defaultCache maxEntriesLocalHeap="200"/>
+	
+	<cache name="searchableCache" maxBytesLocalHeap="100M">
+		<searchable allowDynamicIndexing="true">
+			<searchAttribute name="address" expression="element.getHitCount()"/>
+		</searchable>
+	</cache>
+	
+</ehcache>

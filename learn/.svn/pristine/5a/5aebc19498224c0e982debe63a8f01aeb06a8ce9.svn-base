@@ -1,0 +1,23 @@
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	<display-name>Archetype Created Web Application</display-name>
+	<!-- <servlet>
+		<servlet-name>xxx</servlet-name>
+		<servlet-class>xxx</servlet-class>
+		<async-supported>true</async-supported>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>xxx</servlet-name>
+		<url-pattern>xxx</url-pattern>
+	</servlet-mapping> -->
+<!-- 	<servlet>
+		<servlet-name>xxx</servlet-name>
+		<servlet-class>xxx.xxx</servlet-class>
+		<multipart-config></multipart-config>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>xxx</servlet-name>
+		<url-pattern>/servlet/xxx</url-pattern>
+	</servlet-mapping> -->
+</web-app>

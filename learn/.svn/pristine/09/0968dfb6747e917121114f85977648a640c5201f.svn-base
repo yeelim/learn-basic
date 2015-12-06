@@ -1,0 +1,108 @@
+/**
+ * 
+ */
+package com.yeelim.learn.ehcache.sample;
+
+import org.junit.Test;
+
+import net.sf.ehcache.Cache;
+import net.sf.ehcache.CacheManager;
+import net.sf.ehcache.Element;
+
+/**
+ * @author Yeelim
+ * @date 2014-6-2
+ * @time 下午9:00:16 
+ *
+ */
+public class CacheExplicitLockTest {
+
+	@Test
+	public void test() {
+		CacheManager cacheManager = CacheManager.create();
+		cacheManager.addCache("test");
+		Cache cache = cacheManager.getCache("test");
+		final String key = "abc";
+		cache.acquireReadLockOnKey(key);
+		cache.acquireWriteLockOnKey(key);
+		try {
+			cache.acquireReadLockOnKey(key);
+			cache.put(new Element(key, "123"));
+		} finally {
+			System.out.println(cache.get(key));
+			cache.releaseWriteLockOnKey(key);
+		}
+	}
+	
+	@Test
+	public void test2() throws InterruptedException {
+		CacheManager cacheManager = CacheManager.create();
+		cacheManager.addCache("test");
+		Cache cache = cacheManager.getCache("test");
+		final String key = "abc";
+		WriteTask task = new WriteTask(key, cache);
+		task.start();
+		task.join();
+	}
+	
+	@Test
+	public void test3() throws InterruptedException {
+		CacheManager cacheManager = CacheManager.create();
+		cacheManager.addCache("test");
+		Cache cache = cacheManager.getCache("test");
+		final String key = "abc";
+		ReadTask task = new ReadTask(key, cache);
+		task.start();
+		task.join();
+	}
+	
+	private static class ReadTask extends Thread {
+		
+		private final String key;
+		private final Cache cache;
+		
+		public ReadTask(String key, Cache cache) {
+			this.key = key;
+			this.cache = cache;
+		}
+		
+		public void run() {
+			try {
+				cache.acquireReadLockOnKey(key);
+				cache.acquireReadLockOnKey(key);
+				System.out.println("--------------");
+				cache.acquireWriteLockOnKey(key);
+				System.out.println("Read Task: " + cache.get(key));
+			} finally {
+				cache.releaseReadLockOnKey(key);
+			}
+		}
+	}
+	
+	private static class WriteTask extends Thread {
+		private final String key;
+		private final Cache cache;
+		
+		public WriteTask(String key, Cache cache) {
+			this.key = key;
+			this.cache = cache;
+		}
+		
+		public void run() {
+			try {
+				cache.acquireWriteLockOnKey(key);
+				System.out.println("Write Task......");
+				WriteTask task = new WriteTask(key, cache);
+				task.start();
+				task.join();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			} finally {
+				cache.releaseWriteLockOnKey(key);
+			}
+		}
+	}
+	
+	
+	
+}

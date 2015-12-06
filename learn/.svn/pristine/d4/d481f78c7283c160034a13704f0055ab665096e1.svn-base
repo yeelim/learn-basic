@@ -1,0 +1,187 @@
+/**
+ * 
+ */
+package com.yeelim.learn.java.concurrent;
+
+import java.util.Collections;
+import java.util.List;
+import java.util.Random;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.ThreadPoolExecutor;
+
+import org.apache.log4j.Logger;
+import org.junit.Test;
+
+/**
+ * @author elim
+ * @date 2015-2-4
+ * @time 下午4:20:33 
+ *
+ */
+public class ExecutorsTest {
+
+	private final static Logger logger = Logger.getLogger(ExecutorsTest.class);
+	
+	@Test
+	public void testCallable() {
+		ExecutorService executorService = Executors.newCachedThreadPool();
+		long t1 = System.currentTimeMillis();
+		Future<Long> future = executorService.submit(new Callable<Long>() {
+
+			@Override
+			public Long call() throws Exception {
+				Long sleep = new Random().nextInt(3000) + 1000L;
+				Thread.sleep(sleep);
+				return sleep;
+			}
+			
+		});
+		try {
+			//会阻塞，直到对应的Callable或Runnable执行完成（包括正常完成和异常完成），并返回对应的结果。
+			//如果执行抛出异常，也会抛出ExecutionException。
+			Long result = future.get();
+			long t2 = System.currentTimeMillis();
+			logger.info("调度的结果是：" + result);
+			logger.info("调度耗费的时间是：" + (t2-t1) + "ms");
+		} catch (InterruptedException | ExecutionException e) {
+			logger.error("callable调度失败", e);
+		}
+		
+	}
+	
+	/**
+	 * 测试ExecutorService调用Runnable接口返回Future对象。
+	 */
+	@Test
+	public void testRunnable() {
+		ExecutorService executorService = Executors.newCachedThreadPool();
+		long t1 = System.currentTimeMillis();
+		Future<?> future =  executorService.submit(new Runnable() {
+
+			@Override
+			public void run() {
+				Long sleep = new Random().nextInt(3000) + 1000L;
+				try {
+					Thread.sleep(sleep);
+					logger.info("Runnable接口睡眠的时间是：" + sleep);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+			
+		});
+		try {
+			//会阻塞，直到对应的Callable或Runnable执行完成（包括正常完成和异常完成），并返回对应的结果。
+			//如果执行抛出异常，也会抛出ExecutionException。
+			future.get();
+			long t2 = System.currentTimeMillis();
+			logger.info("调度耗费的时间是：" + (t2-t1) + "ms");
+		} catch (InterruptedException | ExecutionException e) {
+			logger.error("callable调度失败", e);
+		}
+	}
+	
+	/**
+	 * 测试通过Future对任务进行取消
+	 * 测试结果：确实可以中断，线程运行5秒后就不再运行。
+	 */
+	@Test
+	public void testCancelTask() {
+		
+		ExecutorService executorService = Executors.newCachedThreadPool();
+		Future<?> future = executorService.submit(new Runnable() {
+			
+			public void run() {
+				
+				int times = 30;
+				for (int i=0; i<times; ) {
+					long t1 = System.currentTimeMillis();
+					while (System.currentTimeMillis()-t1<1000) {
+						
+					}
+					//5秒时中断标志为true，之后清除，接着睡眠，其它的都为false。
+					logger.info("睡眠了" + ++i + "秒, 还剩" + (times-i) + "秒，是否中断：" + Thread.interrupted());
+				}
+				
+			}
+			
+		});
+		long t1 = System.currentTimeMillis();
+		while (System.currentTimeMillis() - t1 < 5*1000) {
+			//空循环
+		}
+		boolean canceled = future.cancel(true);//参数表示如果对应的线程已经在执行了，是否需要对其进行中断，即设置中断标志。如果还没有执行，那么会将其从队列中移除，这样对应的任务将不会执行。
+		logger.info("任务取消完成……，取消结果是：" + canceled);
+		try {
+			Thread.sleep(20 * 1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public void testExecute() throws InterruptedException {
+		
+		class TestRunnable implements Runnable {
+
+			@Override
+			public void run() {
+				logger.info("--------------Start-----------");
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+				logger.info("-------------End--------------");
+			}
+			
+		};
+		
+		ExecutorService executorService = Executors.newCachedThreadPool();
+		executorService.execute(new TestRunnable());
+		executorService.execute(new TestRunnable());
+		
+		Thread.sleep(3000);
+		ThreadPoolExecutor executor = (ThreadPoolExecutor) executorService;
+		logger.info(executor.getCompletedTaskCount() + "---" + executor.getLargestPoolSize());
+	}
+	
+	@Test
+	public void test() {
+		int a = -5;
+		int b = ~a;//取反减1。
+		logger.info(a);
+		logger.info(b);
+		
+		logger.info(5^6);//0101 0110
+		logger.info(Integer.MAX_VALUE);
+		logger.info(~Integer.MAX_VALUE);
+		/*for (int i=0; i<30000; i++) {
+			logger.info(i + " ******** " + ~i );
+		}*/
+	}
+	
+	@Test
+	public void testInvokeAll() throws InterruptedException {
+		ExecutorService executorService = Executors.newCachedThreadPool();
+		//invokeAll会等待所有任务的完成后再继续往后执行。
+		List<Future<Long>> results = executorService.invokeAll(Collections.singleton(new Callable<Long>() {
+
+			@Override
+			public Long call() throws Exception {
+				logger.info("准备睡眠3s");
+				Thread.sleep(3000);
+				logger.info("睡眠完成。");
+				return 3000L;
+			}
+			
+		}));
+		
+		logger.info("主线程运行完毕。" + results);
+	}
+	
+}

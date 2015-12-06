@@ -1,0 +1,8 @@
+package com.yeelim.learn.netty.decoder;
+option java_package = "com.yeelim.learn.netty.decoder";
+option java_outer_classname = "UserProto";
+
+message User {
+	required int32 id = 1;
+	required string name = 2;
+}

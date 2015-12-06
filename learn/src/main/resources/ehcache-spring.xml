@@ -1,0 +1,9 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd">
+
+	<diskStore path="d:\\ehcache" />
+
+	<cache name="users" maxBytesLocalHeap="10M"/>
+	<cache name="webPageCache" maxBytesLocalHeap="20M"></cache>
+	
+</ehcache>

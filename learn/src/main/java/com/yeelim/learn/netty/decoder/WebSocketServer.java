@@ -1,0 +1,192 @@
+/**
+ * 
+ */
+package com.yeelim.learn.netty.decoder;
+
+import io.netty.bootstrap.ServerBootstrap;
+import io.netty.buffer.ByteBuf;
+import io.netty.buffer.Unpooled;
+import io.netty.channel.ChannelFuture;
+import io.netty.channel.ChannelFutureListener;
+import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.ChannelInitializer;
+import io.netty.channel.EventLoopGroup;
+import io.netty.channel.SimpleChannelInboundHandler;
+import io.netty.channel.nio.NioEventLoopGroup;
+import io.netty.channel.socket.SocketChannel;
+import io.netty.channel.socket.nio.NioServerSocketChannel;
+import io.netty.handler.codec.http.DefaultFullHttpResponse;
+import io.netty.handler.codec.http.FullHttpRequest;
+import io.netty.handler.codec.http.HttpObjectAggregator;
+import io.netty.handler.codec.http.HttpResponseStatus;
+import io.netty.handler.codec.http.HttpServerCodec;
+import io.netty.handler.codec.http.HttpVersion;
+import io.netty.handler.codec.http.websocketx.CloseWebSocketFrame;
+import io.netty.handler.codec.http.websocketx.PingWebSocketFrame;
+import io.netty.handler.codec.http.websocketx.PongWebSocketFrame;
+import io.netty.handler.codec.http.websocketx.TextWebSocketFrame;
+import io.netty.handler.codec.http.websocketx.WebSocketFrame;
+import io.netty.handler.codec.http.websocketx.WebSocketServerHandshaker;
+import io.netty.handler.codec.http.websocketx.WebSocketServerHandshakerFactory;
+import io.netty.handler.stream.ChunkedWriteHandler;
+import io.netty.util.CharsetUtil;
+
+import java.util.Date;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.log4j.Logger;
+
+/**
+ * 
+ * 使用Netty开发WebSocket的服务端
+ * @author elim
+ * @date 2015-4-3
+ * @time 下午11:43:14 
+ *
+ */
+public class WebSocketServer {
+
+	private final static Logger logger = Logger.getLogger(WebSocketServer.class);
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int port = 8080;
+		EventLoopGroup group = new NioEventLoopGroup();
+		ServerBootstrap sb = new ServerBootstrap();
+		sb.group(group).channel(NioServerSocketChannel.class);
+		sb.childHandler(new ChannelInitializer<SocketChannel>() {
+
+			@Override
+			protected void initChannel(SocketChannel ch) throws Exception {
+				ch.pipeline().addLast("http-codec", new HttpServerCodec());
+				ch.pipeline().addLast("aggregator", new HttpObjectAggregator(65536));
+				ch.pipeline().addLast("http_chunked", new ChunkedWriteHandler());
+				ch.pipeline().addLast(new WebSocketServerHandler());
+			}
+		});
+		
+		try {
+			ChannelFuture future = sb.bind(port).sync();
+			future.channel().closeFuture().sync();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+			logger.info("线程被中断了", e);
+		} finally {
+			group.shutdownGracefully();
+		}
+		
+	}
+	
+	private static class WebSocketServerHandler extends SimpleChannelInboundHandler<Object> {
+
+		private WebSocketServerHandshaker handshaker;
+		
+		@Override
+		protected void messageReceived(ChannelHandlerContext ctx, Object msg)
+				throws Exception {
+			logger.info("--------------服务端接收到了消息：" + msg);
+			if (msg instanceof FullHttpRequest) {//第一次请求建立WebSocket连接的请求是Http请求
+				handleHttpRequest(ctx, (FullHttpRequest) msg);
+			} else if (msg instanceof WebSocketFrame) {
+				handleWebSocketFrame(ctx, (WebSocketFrame) msg);
+			}
+		}
+		
+		/**
+		 * 处理WebSocket请求
+		 * @param ctx
+		 * @param frame
+		 */
+		private void handleWebSocketFrame(ChannelHandlerContext ctx,
+				WebSocketFrame frame) {
+			//关闭连接的指令
+			if (frame instanceof CloseWebSocketFrame) {
+				this.handshaker.close(ctx.channel(), (CloseWebSocketFrame) frame);
+			} else if (frame instanceof PingWebSocketFrame) {//ping消息
+				ctx.channel().write(new PongWebSocketFrame(frame.content().retain()));
+			} else if (frame instanceof TextWebSocketFrame) {
+				String request = ((TextWebSocketFrame) frame).text();
+				logger.info("*******************收到的请求消息是：" + request);
+				ctx.channel().writeAndFlush(new TextWebSocketFrame(request + ", 服务器的时间是：" + new Date()));
+			}
+		}
+
+
+		/**
+		 * 处理Http请求
+		 * @param ctx
+		 * @param req
+		 */
+		private void handleHttpRequest(ChannelHandlerContext ctx,
+				FullHttpRequest req) {
+			if (!req.decoderResult().isSuccess() || !"websocket".equals(req.headers().get("Upgrade"))) {
+				sendHttpResponse(ctx, req, new DefaultFullHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.BAD_REQUEST));
+			} else {
+				//握手
+				WebSocketServerHandshakerFactory shakerFactory = new WebSocketServerHandshakerFactory("ws://localhost:8080/websocket", null, false);
+				this.handshaker = shakerFactory.newHandshaker(req);
+				if (this.handshaker == null) {
+					WebSocketServerHandshakerFactory.sendUnsupportedVersionResponse(ctx.channel());
+				} else {
+					this.handshaker.handshake(ctx.channel(), req);
+				}
+				//定期给客户端推送消息
+				Executors.newSingleThreadScheduledExecutor().scheduleAtFixedRate(new Task(ctx), 1, 5, TimeUnit.SECONDS);
+			}
+		}
+
+		
+		/**
+		 * 发送HttpResponse给客户端
+		 * @param ctx
+		 * @param req
+		 * @param response
+		 */
+		private void sendHttpResponse(ChannelHandlerContext ctx,
+				FullHttpRequest req,
+				DefaultFullHttpResponse response) {
+			if (response.status().code() != 200) {
+				ByteBuf buf = Unpooled.copiedBuffer(response.status().toString(), CharsetUtil.UTF_8);
+				response.content().writeBytes(buf);
+				buf.release();
+			}
+			ChannelFuture future = ctx.writeAndFlush(response);
+			if (!isKeepAlive(req) || response.status().code() != 200) {
+				future.addListener(ChannelFutureListener.CLOSE);
+			}
+		}
+		
+		/**
+		 * 用于定期给客户端推送消息
+		 * @param req
+		 * @return
+		 */
+		private boolean isKeepAlive(FullHttpRequest req) {
+			CharSequence conn = req.headers().get("Connection");
+			if (conn != null && conn.toString().equalsIgnoreCase("Keep-Alive")) {
+				return true;
+			}
+			return false;
+		}
+		
+		private class Task implements Runnable {
+
+			private final ChannelHandlerContext ctx;
+			
+			public Task(ChannelHandlerContext ctx) {
+				this.ctx = ctx;
+			}
+
+			@Override
+			public void run() {
+				this.ctx.writeAndFlush(new TextWebSocketFrame("来自服务端的推送，当前系统时间是：" + new Date()));
+			}
+			
+		}
+		
+	}
+	
+}

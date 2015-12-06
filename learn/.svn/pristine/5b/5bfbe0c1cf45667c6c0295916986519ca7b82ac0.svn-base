@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:cache="http://www.springframework.org/schema/cache"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+     http://www.springframework.org/schema/context
+     http://www.springframework.org/schema/context/spring-context-3.0.xsd
+     http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd
+     http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+	<context:component-scan base-package="com.yeelim.learn.spring" />
+<!-- 	<cache:advice id="cacheAdvice" cache-manager="cacheManager" key-generator="userKeyGenerator">
+		<cache:caching cache="users">
+			<cache:cacheable method="findById" key="#p0"/>
+			<cache:cacheable method="find" key="#user.id"/>
+			<cache:cache-evict method="deleteAll" all-entries="true"/>
+		</cache:caching>
+	</cache:advice>
+	
+	<aop:config proxy-target-class="false">
+		<aop:advisor advice-ref="cacheAdvice" pointcut="execution(* com.xxx.UserService.*(..))"/>
+	</aop:config> -->
+	
+	<!-- ConcurrentMap实现 -->
+<!-- 	<bean id="cacheManager" class="org.springframework.cache.support.SimpleCacheManager">
+		<property name="caches">
+			<set>
+				<ref bean="userCache"/>
+				<bean class="org.springframework.cache.concurrent.ConcurrentMapCacheFactoryBean" p:name="xxx"/>
+			</set>
+		</property>
+	</bean> -->
+	
+	<!-- Ehcache实现 -->
+	<bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheCacheManager" p:cache-manager-ref="ehcacheManager"/>
+	<bean id="ehcacheManager" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean" p:config-location="classpath:ehcache-spring.xml"/>
+	
+<!-- 	<bean id="userCache" class="org.springframework.cache.concurrent.ConcurrentMapCacheFactoryBean">
+		<property name="name">
+			<value>users</value>
+		</property>
+	</bean> -->
+
+	<cache:annotation-driven />
+	
+<!-- 	<bean id="userKeyGenerator" class="com.yeelim.learn.spring.cache.UserKeyGenerator"/> -->
+
+	<!-- 把FactoryBean放入Spring的bean容器之后，我们可以直接从bean容器中获取到FactoryBean本身和其对应生成的bean对象， 
+		如这里就是UserFactoryBean本身和其对应生成User对象。 -->
+	<bean id="userFactoryBean" class="com.yeelim.learn.spring.factorybean.UserFactoryBean" lazy-init="false"/>
+
+	<import resource="applicationContext4Cas.xml"/>
+
+</beans>

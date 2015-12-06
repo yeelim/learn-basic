@@ -1,0 +1,23 @@
+<%@page pageEncoding="UTF-8" %>
+<html>
+	<body>
+		<h2>Hello World!</h2>
+		<div>
+			<form method="post" action="servlet/upload" enctype="multipart/form-data">
+				<input type="file" name="upload"/>
+				<input type="submit" value="upload"/>
+			</form>
+		</div>
+		<div>
+			<ul>
+				<li>java ee 6.0</li>
+				<li>ehcache</li>
+				<li>poi</li>
+				<li>spring</li>
+				<li>${application.contextPath }</li>
+				<li><%="Hello World" %></li>
+				<li><%=request.getRemoteHost() %></li>
+			</ul>
+		</div>
+	</body>
+</html>

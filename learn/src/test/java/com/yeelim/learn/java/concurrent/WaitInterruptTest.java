@@ -1,0 +1,79 @@
+/**
+ * 
+ */
+package com.yeelim.learn.java.concurrent;
+
+import org.apache.log4j.Logger;
+import org.junit.Test;
+
+/**
+ * @author elim
+ * @date 2015-1-19
+ * @time 下午11:47:03 
+ * 
+ * 通过调用Object的wait方法进入等待状态的线程如果被中断了，那么对应的InterruptedException必须在当前的线程获取到了对应Object上的锁之后才能抛出。
+ *
+ */
+public class WaitInterruptTest {
+	
+	private final static Logger logger = Logger.getLogger(WaitInterruptTest.class);
+	private final Object obj = new Object();
+	
+	private class Thread1 extends Thread {
+		
+		public void run() {
+			logger.info("Thread1 is ready......");
+			logger.info("thread1 holds obj lock: " + Thread.holdsLock(obj));
+			synchronized (obj) {
+				logger.info("Thread1 is ready to sleep........");
+				logger.info("thread1 holds obj lock in synchronized: " + Thread.holdsLock(obj));
+				try {
+					Thread.sleep(3000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+				logger.info("Thread 1 has sleeped 3000ms");
+				logger.info("Thread1 is interrupted: " + Thread.currentThread().isInterrupted());
+				Thread.currentThread().interrupt();
+				logger.info("Thread1 is interrupted: " + Thread.currentThread().isInterrupted());
+			}
+		}
+		
+	}
+	
+	private class Thread2 extends Thread {
+		
+		public void run() {
+			logger.info("Thread2 is ready......");
+			logger.info("Thread2 holds obj Lock: " + Thread.holdsLock(obj));
+			synchronized (obj) {
+				logger.info("thread2 holds obj lock in synchronized: " + Thread.holdsLock(obj));
+				logger.info("Thread2 is ready to wait.......");
+				try {
+					obj.wait();
+				} catch (InterruptedException e) {
+					logger.info("Thread2 has interrupted");
+				}
+				logger.info("Thread2 run over......");
+			}
+		}
+		
+	}
+	
+	@Test
+	public void test() throws InterruptedException {
+		Thread1 t1 = new Thread1();
+		Thread2 t2 = new Thread2();
+		t2.start();
+		t1.start();
+		Thread.sleep(1000);
+		t2.interrupt();
+		try {
+			t1.join();
+			t2.join();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

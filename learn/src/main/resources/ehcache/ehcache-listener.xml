@@ -1,0 +1,15 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd"
+	maxBytesLocalHeap="100M">
+
+	<diskStore path="d:\\ehcache" />
+	
+	<cacheManagerEventListenerFactory class="com.yeelim.learn.ehcache.listener.MyCacheManagerEventListenerFactory"/>
+	
+	<cache name="test">
+		<cacheEventListenerFactory class="com.yeelim.learn.ehcache.listener.MyCacheEventListenerFactory"/>
+	</cache>
+	
+	<defaultCache/>
+	
+</ehcache>

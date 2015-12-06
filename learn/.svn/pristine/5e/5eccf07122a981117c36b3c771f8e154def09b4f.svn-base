@@ -1,0 +1,64 @@
+/**
+ * 
+ */
+package com.yeelim.learn.jdk;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.nio.channels.FileChannel;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+
+import org.junit.Test;
+
+/**
+ * @author elim
+ * @date 2014-12-6
+ * @time 上午11:54:52 
+ *
+ */
+public class FileChannelTest {
+
+	@Test
+	public void testCopy() throws IOException {
+		try (
+			FileChannel src = FileChannel.open(Paths.get("D:\\test\\testCopySrc.txt"), StandardOpenOption.READ);
+			FileChannel target = FileChannel.open(Paths.get("D:\\test\\testCopyTarget.txt"), StandardOpenOption.WRITE, StandardOpenOption.CREATE);
+		) {
+			src.transferTo(0, src.size(), target);
+		}
+	}
+	
+	@Test
+	public void testCopy2() throws IOException {
+		try (
+			FileChannel src = FileChannel.open(Paths.get("D:\\test\\testCopySrc2.txt"), StandardOpenOption.READ);
+			FileChannel target = FileChannel.open(Paths.get("D:\\test\\testCopyTarget2.txt"), StandardOpenOption.CREATE, StandardOpenOption.WRITE);
+		) {
+			target.transferFrom(src, src.position(), src.size());
+		}
+	}
+	
+	@Test
+	public void testRead() throws IOException {
+		try (FileChannel channel = FileChannel.open(Paths.get("D:\\test\\testCopySrc.txt"), StandardOpenOption.READ)) {
+			ByteBuffer byteBuffer = ByteBuffer.allocate(32*1024);
+			int len = 0;
+			ByteArrayOutputStream baos = new ByteArrayOutputStream();
+			while ((len = channel.read(byteBuffer)) != -1 && byteBuffer.position() > 0) {
+				baos.write(byteBuffer.array(), 0, len);
+				byteBuffer.clear();
+			}
+			System.out.println(new String(baos.toByteArray()));
+		}
+	}
+	
+	@Test
+	public void testWrite() throws IOException {
+		try (FileChannel channel = FileChannel.open(Paths.get("D:\\test\\testWrite.txt"), StandardOpenOption.WRITE, StandardOpenOption.CREATE)) {
+			ByteBuffer buffer = ByteBuffer.wrap("中国人".getBytes());
+			channel.write(buffer);
+		}
+	}
+}

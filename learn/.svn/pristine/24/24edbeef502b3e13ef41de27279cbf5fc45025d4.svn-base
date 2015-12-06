@@ -1,0 +1,875 @@
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from ehcache.xml found in the classpath: file:/E:/learning/Workspace/Eclipse%20j2ee/learn/target/classes/ehcache.xml
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from URL: file:/E:/learning/Workspace/Eclipse%20j2ee/learn/target/classes/ehcache.xml
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+DEBUG main net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: d:\ehcache
+DEBUG main net.sf.ehcache.CacheManager - Creating new CacheManager with default config
+DEBUG main net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+INFO main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - Using regular expression provided through VM argument net.sf.ehcache.pool.sizeof.ignore.pattern for IgnoreSizeOf annotation : ^.*cache\..*IgnoreSizeOf$
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Located valid 'tools.jar' at 'D:\develop\Oracle\java\jdk1.7.0\jre\..\lib\tools.jar'
+INFO main net.sf.ehcache.pool.sizeof.JvmInformation - Detected JVM data model settings of: 64-Bit HotSpot JVM with Compressed OOPs
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Extracted agent jar to temporary file C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent8308475298261803208.jar
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Trying to load agent @ C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent8308475298261803208.jar
+INFO main net.sf.ehcache.pool.impl.DefaultSizeOfEngine - using Agent sizeof engine
+DEBUG main net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.MemoryStore for searchableCache
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+DEBUG main net.sf.ehcache.Cache - Initialised cache: searchableCache
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'searchableCache'.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'searchableCache'.
+INFO main net.sf.ehcache.pool.impl.DefaultSizeOfEngine - using Agent sizeof engine
+DEBUG main net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.MemoryStore for userCache
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+DEBUG main net.sf.ehcache.Cache - Initialised cache: userCache
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'userCache'.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'userCache'.
+DEBUG main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - net.sf.ehcache.pool.sizeof.annotations.IgnoreSizeOf matched IgnoreSizeOf annotation pattern ^.*cache\..*IgnoreSizeOf$
+DEBUG main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - net.sf.ehcache.pool.sizeof.annotations.IgnoreSizeOf matched IgnoreSizeOf annotation pattern ^.*cache\..*IgnoreSizeOf$
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from ehcache.xml found in the classpath: file:/E:/learning/Workspace/Eclipse%20j2ee/learn/target/classes/ehcache.xml
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from URL: file:/E:/learning/Workspace/Eclipse%20j2ee/learn/target/classes/ehcache.xml
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+DEBUG main net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: d:\ehcache
+DEBUG main net.sf.ehcache.CacheManager - Creating new CacheManager with default config
+DEBUG main net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+INFO main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - Using regular expression provided through VM argument net.sf.ehcache.pool.sizeof.ignore.pattern for IgnoreSizeOf annotation : ^.*cache\..*IgnoreSizeOf$
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Located valid 'tools.jar' at 'D:\develop\Oracle\java\jdk1.7.0\jre\..\lib\tools.jar'
+INFO main net.sf.ehcache.pool.sizeof.JvmInformation - Detected JVM data model settings of: 64-Bit HotSpot JVM with Compressed OOPs
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Extracted agent jar to temporary file C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent8938818595811068210.jar
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Trying to load agent @ C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent8938818595811068210.jar
+INFO main net.sf.ehcache.pool.impl.DefaultSizeOfEngine - using Agent sizeof engine
+DEBUG main net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.MemoryStore for userCache
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+DEBUG main net.sf.ehcache.Cache - Initialised cache: userCache
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'userCache'.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'userCache'.
+INFO main net.sf.ehcache.pool.impl.DefaultSizeOfEngine - using Agent sizeof engine
+DEBUG main net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.MemoryStore for searchableCache
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+DEBUG main net.sf.ehcache.Cache - Initialised cache: searchableCache
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'searchableCache'.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'searchableCache'.
+DEBUG main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - net.sf.ehcache.pool.sizeof.annotations.IgnoreSizeOf matched IgnoreSizeOf annotation pattern ^.*cache\..*IgnoreSizeOf$
+DEBUG main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - net.sf.ehcache.pool.sizeof.annotations.IgnoreSizeOf matched IgnoreSizeOf annotation pattern ^.*cache\..*IgnoreSizeOf$
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from ehcache.xml found in the classpath: file:/E:/learning/Workspace/Eclipse%20j2ee/learn/target/classes/ehcache.xml
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from URL: file:/E:/learning/Workspace/Eclipse%20j2ee/learn/target/classes/ehcache.xml
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+DEBUG main net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: d:\ehcache
+DEBUG main net.sf.ehcache.CacheManager - Creating new CacheManager with default config
+DEBUG main net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+INFO main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - Using regular expression provided through VM argument net.sf.ehcache.pool.sizeof.ignore.pattern for IgnoreSizeOf annotation : ^.*cache\..*IgnoreSizeOf$
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Located valid 'tools.jar' at 'D:\develop\Oracle\java\jdk1.7.0\jre\..\lib\tools.jar'
+INFO main net.sf.ehcache.pool.sizeof.JvmInformation - Detected JVM data model settings of: 64-Bit HotSpot JVM with Compressed OOPs
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Extracted agent jar to temporary file C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent3188996795356102436.jar
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Trying to load agent @ C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent3188996795356102436.jar
+INFO main net.sf.ehcache.pool.impl.DefaultSizeOfEngine - using Agent sizeof engine
+DEBUG main net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.MemoryStore for userCache
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+DEBUG main net.sf.ehcache.Cache - Initialised cache: userCache
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'userCache'.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'userCache'.
+INFO main net.sf.ehcache.pool.impl.DefaultSizeOfEngine - using Agent sizeof engine
+DEBUG main net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.MemoryStore for searchableCache
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+DEBUG main net.sf.ehcache.Cache - Initialised cache: searchableCache
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'searchableCache'.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'searchableCache'.
+DEBUG main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - net.sf.ehcache.pool.sizeof.annotations.IgnoreSizeOf matched IgnoreSizeOf annotation pattern ^.*cache\..*IgnoreSizeOf$
+DEBUG main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - net.sf.ehcache.pool.sizeof.annotations.IgnoreSizeOf matched IgnoreSizeOf annotation pattern ^.*cache\..*IgnoreSizeOf$
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from ehcache.xml found in the classpath: file:/E:/learning/Workspace/Eclipse%20j2ee/learn/target/classes/ehcache.xml
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from URL: file:/E:/learning/Workspace/Eclipse%20j2ee/learn/target/classes/ehcache.xml
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+DEBUG main net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: d:\ehcache
+DEBUG main net.sf.ehcache.CacheManager - Creating new CacheManager with default config
+DEBUG main net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+INFO main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - Using regular expression provided through VM argument net.sf.ehcache.pool.sizeof.ignore.pattern for IgnoreSizeOf annotation : ^.*cache\..*IgnoreSizeOf$
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Located valid 'tools.jar' at 'D:\develop\Oracle\java\jdk1.7.0\jre\..\lib\tools.jar'
+INFO main net.sf.ehcache.pool.sizeof.JvmInformation - Detected JVM data model settings of: 64-Bit HotSpot JVM with Compressed OOPs
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Extracted agent jar to temporary file C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent7161189613464952393.jar
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Trying to load agent @ C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent7161189613464952393.jar
+INFO main net.sf.ehcache.pool.impl.DefaultSizeOfEngine - using Agent sizeof engine
+DEBUG main net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.MemoryStore for searchableCache
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+DEBUG main net.sf.ehcache.Cache - Initialised cache: searchableCache
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'searchableCache'.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'searchableCache'.
+INFO main net.sf.ehcache.pool.impl.DefaultSizeOfEngine - using Agent sizeof engine
+DEBUG main net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.MemoryStore for userCache
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+DEBUG main net.sf.ehcache.Cache - Initialised cache: userCache
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'userCache'.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'userCache'.
+DEBUG main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - net.sf.ehcache.pool.sizeof.annotations.IgnoreSizeOf matched IgnoreSizeOf annotation pattern ^.*cache\..*IgnoreSizeOf$
+DEBUG main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - net.sf.ehcache.pool.sizeof.annotations.IgnoreSizeOf matched IgnoreSizeOf annotation pattern ^.*cache\..*IgnoreSizeOf$
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from ehcache.xml found in the classpath: file:/E:/learning/Workspace/Eclipse%20j2ee/learn/target/classes/ehcache.xml
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from URL: file:/E:/learning/Workspace/Eclipse%20j2ee/learn/target/classes/ehcache.xml
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+DEBUG main net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: d:\ehcache
+DEBUG main net.sf.ehcache.CacheManager - Creating new CacheManager with default config
+DEBUG main net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+INFO main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - Using regular expression provided through VM argument net.sf.ehcache.pool.sizeof.ignore.pattern for IgnoreSizeOf annotation : ^.*cache\..*IgnoreSizeOf$
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Located valid 'tools.jar' at 'D:\develop\Oracle\java\jdk1.7.0\jre\..\lib\tools.jar'
+INFO main net.sf.ehcache.pool.sizeof.JvmInformation - Detected JVM data model settings of: 64-Bit HotSpot JVM with Compressed OOPs
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Extracted agent jar to temporary file C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent1468871819995194820.jar
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Trying to load agent @ C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent1468871819995194820.jar
+INFO main net.sf.ehcache.pool.impl.DefaultSizeOfEngine - using Agent sizeof engine
+DEBUG main net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.MemoryStore for userCache
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+DEBUG main net.sf.ehcache.Cache - Initialised cache: userCache
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'userCache'.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'userCache'.
+INFO main net.sf.ehcache.pool.impl.DefaultSizeOfEngine - using Agent sizeof engine
+DEBUG main net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.MemoryStore for searchableCache
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+DEBUG main net.sf.ehcache.Cache - Initialised cache: searchableCache
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'searchableCache'.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'searchableCache'.
+DEBUG main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - net.sf.ehcache.pool.sizeof.annotations.IgnoreSizeOf matched IgnoreSizeOf annotation pattern ^.*cache\..*IgnoreSizeOf$
+DEBUG main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - net.sf.ehcache.pool.sizeof.annotations.IgnoreSizeOf matched IgnoreSizeOf annotation pattern ^.*cache\..*IgnoreSizeOf$
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from ehcache.xml found in the classpath: file:/E:/learning/Workspace/Eclipse%20j2ee/learn/target/classes/ehcache.xml
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from URL: file:/E:/learning/Workspace/Eclipse%20j2ee/learn/target/classes/ehcache.xml
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+DEBUG main net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: d:\ehcache
+DEBUG main net.sf.ehcache.CacheManager - Creating new CacheManager with default config
+DEBUG main net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+INFO main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - Using regular expression provided through VM argument net.sf.ehcache.pool.sizeof.ignore.pattern for IgnoreSizeOf annotation : ^.*cache\..*IgnoreSizeOf$
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Located valid 'tools.jar' at 'D:\develop\Oracle\java\jdk1.7.0\jre\..\lib\tools.jar'
+INFO main net.sf.ehcache.pool.sizeof.JvmInformation - Detected JVM data model settings of: 64-Bit HotSpot JVM with Compressed OOPs
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Extracted agent jar to temporary file C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent245341184478045789.jar
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Trying to load agent @ C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent245341184478045789.jar
+INFO main net.sf.ehcache.pool.impl.DefaultSizeOfEngine - using Agent sizeof engine
+DEBUG main net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.MemoryStore for userCache
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+DEBUG main net.sf.ehcache.Cache - Initialised cache: userCache
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'userCache'.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'userCache'.
+INFO main net.sf.ehcache.pool.impl.DefaultSizeOfEngine - using Agent sizeof engine
+DEBUG main net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.MemoryStore for searchableCache
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+DEBUG main net.sf.ehcache.Cache - Initialised cache: searchableCache
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'searchableCache'.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'searchableCache'.
+DEBUG main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - net.sf.ehcache.pool.sizeof.annotations.IgnoreSizeOf matched IgnoreSizeOf annotation pattern ^.*cache\..*IgnoreSizeOf$
+DEBUG main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - net.sf.ehcache.pool.sizeof.annotations.IgnoreSizeOf matched IgnoreSizeOf annotation pattern ^.*cache\..*IgnoreSizeOf$
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from ehcache.xml found in the classpath: file:/E:/learning/Workspace/Eclipse%20j2ee/learn/target/classes/ehcache.xml
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from URL: file:/E:/learning/Workspace/Eclipse%20j2ee/learn/target/classes/ehcache.xml
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+DEBUG main net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: d:\ehcache
+DEBUG main net.sf.ehcache.CacheManager - Creating new CacheManager with default config
+DEBUG main net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+INFO main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - Using regular expression provided through VM argument net.sf.ehcache.pool.sizeof.ignore.pattern for IgnoreSizeOf annotation : ^.*cache\..*IgnoreSizeOf$
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Located valid 'tools.jar' at 'D:\develop\Oracle\java\jdk1.7.0\jre\..\lib\tools.jar'
+INFO main net.sf.ehcache.pool.sizeof.JvmInformation - Detected JVM data model settings of: 64-Bit HotSpot JVM with Compressed OOPs
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Extracted agent jar to temporary file C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent3497186495547386114.jar
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Trying to load agent @ C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent3497186495547386114.jar
+INFO main net.sf.ehcache.pool.impl.DefaultSizeOfEngine - using Agent sizeof engine
+DEBUG main net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.MemoryStore for userCache
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+DEBUG main net.sf.ehcache.Cache - Initialised cache: userCache
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'userCache'.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'userCache'.
+INFO main net.sf.ehcache.pool.impl.DefaultSizeOfEngine - using Agent sizeof engine
+DEBUG main net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.MemoryStore for searchableCache
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+DEBUG main net.sf.ehcache.Cache - Initialised cache: searchableCache
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'searchableCache'.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'searchableCache'.
+DEBUG main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - net.sf.ehcache.pool.sizeof.annotations.IgnoreSizeOf matched IgnoreSizeOf annotation pattern ^.*cache\..*IgnoreSizeOf$
+DEBUG main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - net.sf.ehcache.pool.sizeof.annotations.IgnoreSizeOf matched IgnoreSizeOf annotation pattern ^.*cache\..*IgnoreSizeOf$
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from ehcache.xml found in the classpath: file:/E:/learning/Workspace/Eclipse%20j2ee/learn/target/classes/ehcache.xml
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from URL: file:/E:/learning/Workspace/Eclipse%20j2ee/learn/target/classes/ehcache.xml
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+DEBUG main net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: d:\ehcache
+DEBUG main net.sf.ehcache.CacheManager - Creating new CacheManager with default config
+DEBUG main net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+INFO main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - Using regular expression provided through VM argument net.sf.ehcache.pool.sizeof.ignore.pattern for IgnoreSizeOf annotation : ^.*cache\..*IgnoreSizeOf$
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Located valid 'tools.jar' at 'D:\develop\Oracle\java\jdk1.7.0\jre\..\lib\tools.jar'
+INFO main net.sf.ehcache.pool.sizeof.JvmInformation - Detected JVM data model settings of: 64-Bit HotSpot JVM with Compressed OOPs
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Extracted agent jar to temporary file C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent7829512994245871828.jar
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Trying to load agent @ C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent7829512994245871828.jar
+INFO main net.sf.ehcache.pool.impl.DefaultSizeOfEngine - using Agent sizeof engine
+DEBUG main net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.MemoryStore for userCache
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+DEBUG main net.sf.ehcache.Cache - Initialised cache: userCache
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'userCache'.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'userCache'.
+INFO main net.sf.ehcache.pool.impl.DefaultSizeOfEngine - using Agent sizeof engine
+DEBUG main net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.MemoryStore for searchableCache
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+DEBUG main net.sf.ehcache.Cache - Initialised cache: searchableCache
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'searchableCache'.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'searchableCache'.
+DEBUG main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - net.sf.ehcache.pool.sizeof.annotations.IgnoreSizeOf matched IgnoreSizeOf annotation pattern ^.*cache\..*IgnoreSizeOf$
+DEBUG main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - net.sf.ehcache.pool.sizeof.annotations.IgnoreSizeOf matched IgnoreSizeOf annotation pattern ^.*cache\..*IgnoreSizeOf$
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from ehcache.xml found in the classpath: file:/E:/learning/Workspace/Eclipse%20j2ee/learn/target/classes/ehcache.xml
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from URL: file:/E:/learning/Workspace/Eclipse%20j2ee/learn/target/classes/ehcache.xml
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+DEBUG main net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: d:\ehcache
+DEBUG main net.sf.ehcache.CacheManager - Creating new CacheManager with default config
+DEBUG main net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+INFO main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - Using regular expression provided through VM argument net.sf.ehcache.pool.sizeof.ignore.pattern for IgnoreSizeOf annotation : ^.*cache\..*IgnoreSizeOf$
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Located valid 'tools.jar' at 'D:\develop\Oracle\java\jdk1.7.0\jre\..\lib\tools.jar'
+INFO main net.sf.ehcache.pool.sizeof.JvmInformation - Detected JVM data model settings of: 64-Bit HotSpot JVM with Compressed OOPs
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Extracted agent jar to temporary file C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent520653953817834643.jar
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Trying to load agent @ C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent520653953817834643.jar
+INFO main net.sf.ehcache.pool.impl.DefaultSizeOfEngine - using Agent sizeof engine
+DEBUG main net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.MemoryStore for userCache
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+DEBUG main net.sf.ehcache.Cache - Initialised cache: userCache
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'userCache'.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'userCache'.
+INFO main net.sf.ehcache.pool.impl.DefaultSizeOfEngine - using Agent sizeof engine
+DEBUG main net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.MemoryStore for searchableCache
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+DEBUG main net.sf.ehcache.Cache - Initialised cache: searchableCache
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'searchableCache'.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'searchableCache'.
+DEBUG main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - net.sf.ehcache.pool.sizeof.annotations.IgnoreSizeOf matched IgnoreSizeOf annotation pattern ^.*cache\..*IgnoreSizeOf$
+DEBUG main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - net.sf.ehcache.pool.sizeof.annotations.IgnoreSizeOf matched IgnoreSizeOf annotation pattern ^.*cache\..*IgnoreSizeOf$
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from file: ehcache-listener.xml
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from file: \ehcache-listener.xml
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from file: \ehcache\ehcache-listener.xml
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from URL: null
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from URL: file:/E:/learning/Workspace/Eclipse%20j2ee/learn/target/classes/ehcache-listener.xml
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+DEBUG main net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: d:\ehcache
+DEBUG main net.sf.ehcache.CacheManager - Creating new CacheManager with config URL: file:/E:/learning/Workspace/Eclipse%20j2ee/learn/target/classes/ehcache-listener.xml
+DEBUG main net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+INFO main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - Using regular expression provided through VM argument net.sf.ehcache.pool.sizeof.ignore.pattern for IgnoreSizeOf annotation : ^.*cache\..*IgnoreSizeOf$
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Located valid 'tools.jar' at 'D:\develop\Oracle\java\jdk1.7.0\jre\..\lib\tools.jar'
+INFO main net.sf.ehcache.pool.sizeof.JvmInformation - Detected JVM data model settings of: 64-Bit HotSpot JVM with Compressed OOPs
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Extracted agent jar to temporary file C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent2588183011483460223.jar
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Trying to load agent @ C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent2588183011483460223.jar
+INFO main net.sf.ehcache.pool.impl.DefaultSizeOfEngine - using Agent sizeof engine
+DEBUG main net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+DEBUG main net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: d:\ehcache
+DEBUG main net.sf.ehcache.CacheManager - Creating new CacheManager with InputStream
+DEBUG main net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+INFO main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - Using regular expression provided through VM argument net.sf.ehcache.pool.sizeof.ignore.pattern for IgnoreSizeOf annotation : ^.*cache\..*IgnoreSizeOf$
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Located valid 'tools.jar' at 'D:\develop\Oracle\java\jdk1.7.0\jre\..\lib\tools.jar'
+INFO main net.sf.ehcache.pool.sizeof.JvmInformation - Detected JVM data model settings of: 64-Bit HotSpot JVM with Compressed OOPs
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Extracted agent jar to temporary file C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent7307269365699949103.jar
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Trying to load agent @ C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent7307269365699949103.jar
+INFO main net.sf.ehcache.pool.impl.DefaultSizeOfEngine - using Agent sizeof engine
+DEBUG main net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+DEBUG main net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: d:\ehcache
+DEBUG main net.sf.ehcache.CacheManager - Creating new CacheManager with InputStream
+DEBUG main net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+INFO main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - Using regular expression provided through VM argument net.sf.ehcache.pool.sizeof.ignore.pattern for IgnoreSizeOf annotation : ^.*cache\..*IgnoreSizeOf$
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Located valid 'tools.jar' at 'D:\develop\Oracle\java\jdk1.7.0\jre\..\lib\tools.jar'
+INFO main net.sf.ehcache.pool.sizeof.JvmInformation - Detected JVM data model settings of: 64-Bit HotSpot JVM with Compressed OOPs
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Extracted agent jar to temporary file C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent2777409693819363989.jar
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Trying to load agent @ C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent2777409693819363989.jar
+INFO main net.sf.ehcache.pool.impl.DefaultSizeOfEngine - using Agent sizeof engine
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+DEBUG main net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: d:\ehcache
+DEBUG main net.sf.ehcache.CacheManager - Creating new CacheManager with InputStream
+DEBUG main net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+INFO main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - Using regular expression provided through VM argument net.sf.ehcache.pool.sizeof.ignore.pattern for IgnoreSizeOf annotation : ^.*cache\..*IgnoreSizeOf$
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Located valid 'tools.jar' at 'D:\develop\Oracle\java\jdk1.7.0\jre\..\lib\tools.jar'
+INFO main net.sf.ehcache.pool.sizeof.JvmInformation - Detected JVM data model settings of: 64-Bit HotSpot JVM with Compressed OOPs
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Extracted agent jar to temporary file C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent4149662738688590070.jar
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Trying to load agent @ C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent4149662738688590070.jar
+INFO main net.sf.ehcache.pool.impl.DefaultSizeOfEngine - using Agent sizeof engine
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from ehcache.xml found in the classpath: file:/E:/learning/Workspace/Eclipse%20j2ee/learn/target/classes/ehcache.xml
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from URL: file:/E:/learning/Workspace/Eclipse%20j2ee/learn/target/classes/ehcache.xml
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+DEBUG main net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: d:\ehcache
+DEBUG main net.sf.ehcache.CacheManager - Creating new CacheManager with default config
+DEBUG main net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+INFO main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - Using regular expression provided through VM argument net.sf.ehcache.pool.sizeof.ignore.pattern for IgnoreSizeOf annotation : ^.*cache\..*IgnoreSizeOf$
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Located valid 'tools.jar' at 'D:\develop\Oracle\java\jdk1.7.0\jre\..\lib\tools.jar'
+INFO main net.sf.ehcache.pool.sizeof.JvmInformation - Detected JVM data model settings of: 64-Bit HotSpot JVM with Compressed OOPs
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Extracted agent jar to temporary file C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent5131480116441636319.jar
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Trying to load agent @ C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent5131480116441636319.jar
+INFO main net.sf.ehcache.pool.impl.DefaultSizeOfEngine - using Agent sizeof engine
+DEBUG main net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.MemoryStore for searchableCache
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+DEBUG main net.sf.ehcache.Cache - Initialised cache: searchableCache
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'searchableCache'.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'searchableCache'.
+INFO main net.sf.ehcache.pool.impl.DefaultSizeOfEngine - using Agent sizeof engine
+DEBUG main net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.MemoryStore for userCache
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+DEBUG main net.sf.ehcache.Cache - Initialised cache: userCache
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'userCache'.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'userCache'.
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from URL: null
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from URL: null
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from URL: null
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from URL: file:/E:/learning/Workspace/Eclipse%20j2ee/learn/target/classes/ehcache.xml
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+DEBUG main net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: d:\ehcache
+DEBUG main net.sf.ehcache.CacheManager - Creating new CacheManager with config URL: file:/E:/learning/Workspace/Eclipse%20j2ee/learn/target/classes/ehcache.xml
+DEBUG main net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+INFO main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - Using regular expression provided through VM argument net.sf.ehcache.pool.sizeof.ignore.pattern for IgnoreSizeOf annotation : ^.*cache\..*IgnoreSizeOf$
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Located valid 'tools.jar' at 'D:\develop\Oracle\java\jdk1.7.0\jre\..\lib\tools.jar'
+INFO main net.sf.ehcache.pool.sizeof.JvmInformation - Detected JVM data model settings of: 64-Bit HotSpot JVM with Compressed OOPs
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Extracted agent jar to temporary file C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent398142742924599385.jar
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Trying to load agent @ C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent398142742924599385.jar
+INFO main net.sf.ehcache.pool.impl.DefaultSizeOfEngine - using Agent sizeof engine
+DEBUG main net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.MemoryStore for userCache
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+DEBUG main net.sf.ehcache.Cache - Initialised cache: userCache
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'userCache'.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'userCache'.
+INFO main net.sf.ehcache.pool.impl.DefaultSizeOfEngine - using Agent sizeof engine
+DEBUG main net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.MemoryStore for searchableCache
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+DEBUG main net.sf.ehcache.Cache - Initialised cache: searchableCache
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'searchableCache'.
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'searchableCache'.
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from URL: file:/E:/learning/Workspace/Eclipse%20j2ee/learn/target/classes/ehcache-listener.xml
+DEBUG main net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+DEBUG main net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+DEBUG main net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: d:\ehcache
+DEBUG main net.sf.ehcache.CacheManager - Creating new CacheManager with config URL: file:/E:/learning/Workspace/Eclipse%20j2ee/learn/target/classes/ehcache-listener.xml
+DEBUG main net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+INFO main net.sf.ehcache.pool.sizeof.filter.AnnotationSizeOfFilter - Using regular expression provided through VM argument net.sf.ehcache.pool.sizeof.ignore.pattern for IgnoreSizeOf annotation : ^.*cache\..*IgnoreSizeOf$
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Located valid 'tools.jar' at 'D:\develop\Oracle\java\jdk1.7.0\jre\..\lib\tools.jar'
+INFO main net.sf.ehcache.pool.sizeof.JvmInformation - Detected JVM data model settings of: 64-Bit HotSpot JVM with Compressed OOPs
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Extracted agent jar to temporary file C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent6716621098187670819.jar
+INFO main net.sf.ehcache.pool.sizeof.AgentLoader - Trying to load agent @ C:\Users\ADMINI~1\AppData\Local\Temp\ehcache-sizeof-agent6716621098187670819.jar
+INFO main net.sf.ehcache.pool.impl.DefaultSizeOfEngine - using Agent sizeof engine
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+DEBUG main net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.MemoryStore for test
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_GET
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_PUT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_REMOVE
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+DEBUG main net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+DEBUG main net.sf.ehcache.Cache - Initialised cache: test
+DEBUG main net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'test'.
